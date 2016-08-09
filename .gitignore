@@ -7,14 +7,14 @@ figures/*
 figures/*/
 preamble/*
 preamble/*/
+products/*
 # allow any
 !input/sample.tex
 !input/sample_code.py
 !figures/sample_imgs
 !preamble/listings.tex
+!.gitkeep
 ###################
-
-products/*
 
 # Created by https://www.gitignore.io/api/linux,osx,vim
 
