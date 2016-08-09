@@ -1,0 +1,53 @@
+\documentclass[11pt,a4j]{jsarticle}
+% \documentclass[11pt, a4j, twocolumn]{jsarticle}
+% \documentclass[11pt,a4paper]{jsarticle}
+
+% パッケージ読み込み
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+% \usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{ascmac}
+\usepackage[english, japanese]{babel}
+\usepackage{layout}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{url}
+
+% マクロ
+\newcommand{\divergence}{\mathrm{div}\,}
+\newcommand{\grad}{\mathrm{grad}\,}
+\newcommand{\rot}{\mathrm{rot}\,}
+
+% 定理環境
+\newtheorem{SampleA}{Sample Env A}[section]
+\newtheorem{SampleB}{Sample Env B}[SampleA]
+\newtheorem{SampleC}{Sample Env C}
+% 番号消すには次のように。
+\renewcommand{\theSampleC}{}
+
+% 参考文献
+\bibliographystyle{junsrt}
+% \bibliographystyle{jplain}
+
+% タイトル
+\title{\textsc{Title}}
+\author{\textsc{Author}}
+\date{\textsc{\today}}
+
+% そのほかのプリアンブル
+\input{preamble/listings.tex}
+
+% 本文
+\begin{document}
+    % \layout % レイアウトを表示する．
+    \selectlanguage{japanese}
+    \AtBeginDvi{\special{pdf:mapfile texfonts_ipa.map}}
+    \maketitle
+    % \input{input/1_input}
+    \input{input/sample}
+    \bibliography{ref}
+\end{document}
+

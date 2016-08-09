@@ -1,0 +1,17 @@
+[core]
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = simple
+[user]
+	name = rapmocha
+	email = rapmocha@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
